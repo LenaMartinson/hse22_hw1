@@ -33,3 +33,6 @@ fastqc -o fastqc_data oil_R1.fastq oil_R2.fastq oilMP_S4_L001_R2_001.fastq oilMP
  mkdir multiqc_data
  multiqc -o multiqc_data fastqc_data
  ```
+ 
+ <image src="/Screenshot from 2022-10-03 22-02-11.png">
+  <image src="/Screenshot from 2022-10-03 22-06-39.png">
