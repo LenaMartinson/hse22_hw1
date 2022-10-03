@@ -72,5 +72,18 @@ multiqc -o multiqc_data_trimmed fastqc_data_trimmed
  ```
  platanus assemble -f oil_R1_sample.fastq.trimmed  oil_R2_sample.fastq.trimmed
 ```
-
-
+ 
+  Скаффолды:
+  
+  ```
+  platanus scaffold -c out_contig.fa -IP1 oil_R1_sample.fastq.trimmed oil_R2_sample.fastq.trimmed -OP2 oilMP_S4_L001_R1_001_sample.fastq.int_trimmed oilMP_S4_L001_R2_001_sample.fastq.int_trimmed
+  ```
+Весь анализ сделан в ноутбуе в колабе: https://colab.research.google.com/drive/18_GLaBxoyPz_L34SCOCaJYQwpIg8-N6b?usp=sharing
+  
+  Уменьшаем количество гэпов:
+  
+  ```
+  platanus gap_close -c out_scaffold.fa -IP1 oil_R1_sample.fastq.trimmed oil_R2_sample.fastq.trimmed -OP2 oilMP_S4_L001_R1_001_sample.fastq.int_trimmed oilMP_S4_L001_R2_001_sample.fastq.int_trimmed
+  ```
+  
+  Считаем количество гэпов в том же ноутбуке.
