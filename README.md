@@ -67,5 +67,10 @@ multiqc -o multiqc_data_trimmed fastqc_data_trimmed
  
  <image src="/Screenshot from 2022-10-03 22-35-25.png">
  
+ Строим континги из подрезанных чтений:
  
- 
+ ```
+ platanus assemble -f oil_R1_sample.fastq.trimmed  oil_R2_sample.fastq.trimmed
+```
+
+
