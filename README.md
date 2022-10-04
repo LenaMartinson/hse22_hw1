@@ -87,3 +87,9 @@ multiqc -o multiqc_data_trimmed fastqc_data_trimmed
   ```
   
   Считаем количество гэпов в том же ноутбуке.
+  
+ Осталось удалить ненужные файлы:
+ 
+ ```
+ rf -rm *trimmed
+ ```
